@@ -1,0 +1,76 @@
+/* AdmissionForm.css */
+
+.admission-form-container {
+  display: flex;
+}
+
+.admission-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admission-form-container label {
+  margin-right: 100px;
+  margin-bottom: 10px;
+}
+
+.admission-form-container input,
+.admission-form-container select {
+  width: 100%;
+  color: var(--heading-color); /* Applying color */
+  background: var(--bg-grey); /* Applying background color */
+  font-size: 16px;
+  padding: 14px;
+  border: 2px solid var(--border-color-light);
+  outline: none;
+  margin-top: 5px;
+  border-radius: var(--border-radius);
+}
+
+.admission-form-container textarea {
+  height: 180px;
+  margin: 0 0 20px 0;
+}
+
+.admission-form-container input:focus,
+.admission-form-container textarea:focus {
+  border: 2px solid var(--secondary-color);
+  background: var(--bg-color);
+}
+
+.cont-left.text-center i {
+  color: var(--secondary-color);
+  font-size: 26px;
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+  display: none;
+}
+
+/* Create custom radio button appearance */
+input[type="radio"] + label {
+  margin-top: 20px;
+  position: relative;
+  padding-left: 25px; /* Adjust the spacing between the box and label */
+  cursor: pointer;
+}
+
+/* Create the radio button dot */
+input[type="radio"] + label:before {
+
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust the size of the box */
+  height: 20px; /* Adjust the size of the box */
+  border: 2px solid #ccc; /* Adjust the border color */
+  border-radius: 50%; /* Make it round */
+}
+
+/* Show the dot inside the box when selected */
+input[type="radio"]:checked + label:before {
+  background-color: #3d86d4; /* Adjust the color of the dot */
+}

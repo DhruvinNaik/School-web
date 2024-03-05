@@ -1,0 +1,46 @@
+/* AdmissionForm.css */
+
+.admission-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .admission-form-container h2 {
+    text-align: center;
+  }
+  
+  .admission-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .admission-form-container label {
+    margin-bottom: 10px;
+  }
+  
+  .admission-form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .admission-form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .admission-form-container button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,204 @@
+@media (max-width: 1204px) {
+    p{
+      display: none;
+    }
+  }
+/* Set your background image here */
+    /* background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    max-width: 300px;
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+ */
+
+
+ .background {
+    margin-top: 20px;
+    position: relative;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/db935b0d-dc38-4b33-b784-38d334eb12af/ddnafdx-5beb9d11-749c-4131-b79d-57f5d137f720.jpg/v1/fill/w_900,h_507,q_75,strp/school_hallway___visual_novel_bg_by_gin_1994_ddnafdx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTA3IiwicGF0aCI6IlwvZlwvZGI5MzViMGQtZGMzOC00YjMzLWI3ODQtMzhkMzM0ZWIxMmFmXC9kZG5hZmR4LTViZWI5ZDExLTc0OWMtNDEzMS1iNzlkLTU3ZjVkMTM3ZjcyMC5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.fUve6ME27LqeT2KOWR7kQZtEj0m5BJtwWZK5aU-ttFo'); /* Set your background image here */
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; /* Ensures the background covers the entire viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.53), rgba(202, 198, 198, 0.749), rgba(255, 255, 255, 0.749), rgb(255, 255, 255)); /* Adjust colors and opacity as needed */
+}
+
+.container {
+    display: flex;
+    
+}
+
+.card {
+    background-color: white;
+    flex: 1;
+    min-width: 500px;
+    overflow: hidden;
+    margin: 0 40px 10px 0px;
+}
+#card1{
+    margin-left: -200px;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+
+.readmore{
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius:5px;
+    background: rgb(216, 1, 1);
+    color: white;
+    margin-left: 180px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.readmore:hover{
+    background:rgb(123, 1, 1);
+}
+
+@media(max-width:1413px){
+
+        .card {
+            background-color: white;
+            flex: 1;
+            min-width: 300px;
+            overflow: hidden;
+            margin: 0 20px 10px 0px;
+        }
+        .background{
+            padding-left: 220px;
+        }
+        .readmore{
+            margin-left: 140px;
+        }
+
+}
+
+@media(max-width:1205px){
+
+    .card {
+        background-color: white;
+        flex: 1;
+        min-width: 100px;
+        overflow: hidden;
+        margin: 0 20px 10px 0px;
+    }
+    .background{
+        padding-left: 220px;
+    }
+    .readmore{
+        margin-left: 110px;
+    }
+    .card img {
+        width: 100%;
+        height: 200px;
+        display: block;
+        transition: transform 0.3s ease; /* Add transition for smooth animation */
+    }
+}
+
+@media(max-width:1065px){
+
+    .card {
+        background-color: white;
+        flex: 1;
+        min-width: 100px;
+        overflow: hidden;
+        margin: 0 20px 10px 0px;
+    }
+    .background{
+        padding-left: 220px;
+    }
+    .readmore{
+        margin-left: 90px;
+    }
+    .card img {
+        width: 100%;
+        height: 200px;
+        display: block;
+        transition: transform 0.3s ease; /* Add transition for smooth animation */
+    }
+}
+
+@media(max-width:981px){
+
+    .card {
+        background-color: white;
+        flex: 1;
+        min-width: 100px;
+        overflow: hidden;
+        margin: 0 20px 10px 0px;
+    }
+    .background{
+        padding-left: 220px;
+    }
+    .readmore{
+        margin-left: 50px;
+    }
+    .card img {
+        width: 100%;
+        height: 200px;
+        display: block;
+        transition: transform 0.3s ease; /* Add transition for smooth animation */
+    }
+}
+
+@media(max-width: 741px) {
+    .container {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .card {
+        margin-right: 0; /* Remove right margin to occupy full width */
+        min-width: 400px;
+    }
+
+    #card1{
+        margin-left: 2px;
+    }
+
+    .background {
+        padding-left: 0; /* Adjust padding */
+    }
+
+    .readmore {
+        margin-left: 140px; /* Adjust margin */
+    }
+
+    .card img {
+        height: 150px; /* Adjust image height */
+    }
+}

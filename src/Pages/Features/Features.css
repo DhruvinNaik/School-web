@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.marquee {
+  margin-left: 200px;
+  width: 1600px;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: scrolling 80s linear infinite;
+}
+
+.marquee-item {
+  position: relative; /* Added for positioning */
+  flex: 0 0 16vw;
+  margin: 0 1vw;
+}
+.marquee-item h5{
+  margin-top: 10px;
+  font-size: 18px;
+}
+.marquee-item img {
+  display: block;
+  width: 300px;
+  height: 200px;
+  cursor: grabbing;
+}
+
+/* Description styles */
+.description {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.marquee-item:hover .description {
+  opacity: 1; /* Show on hover */
+}
+
+/* Add a class to pause the animation */
+.marquee-paused {
+  animation-play-state: paused;
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-144vw); }
+}
+.horizontal-line {
+  
+  width: 300px;
+  height: 20%;
+  color: red;
+  border: none; /* Remove default border */
+}
+
